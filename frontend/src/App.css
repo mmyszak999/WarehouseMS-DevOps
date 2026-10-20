@@ -1,0 +1,125 @@
+/* src/App.css */
+
+/* General styles for light and dark themes */
+body.light {
+  background-color: #f0f2f5; /* Light background for light theme */
+  color: #333;
+}
+
+body.dark {
+  background-color: #121212; /* Dark background for dark theme */
+  color: #e0e0e0;
+}
+
+/* Styles for the app bar */
+.app-bar.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.app-bar.dark {
+  background-color: #1f1f1f; /* Darker background for app bar */
+  color: #ffffff;
+}
+
+/* Styles for the container */
+.container.light {
+  background-color: #ffffff; /* Light background for container */
+  color: #333333;
+}
+
+.container.dark {
+  background-color: #1e1e1e; /* Dark background for container */
+  color: #e0e0e0;
+}
+
+.container {
+  width: 98%;
+  margin: auto;
+}
+
+/* Styles for cards and other elements */
+.card.light {
+  background-color: #ffffff; /* Light background for cards */
+  color: #333333;
+}
+
+.card.dark {
+  background-color: #2c2c2c; /* Darker background for cards */
+  color: #e0e0e0;
+}
+
+/* Styles for buttons */
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0; /* Remove any default margin for buttons */
+}
+
+button.primary {
+  background-color: #007bff;
+  color: white;
+}
+
+button.secondary {
+  background-color: #28a745;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* Grid adjustments for layout */
+.box-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns: primary on left, secondary on right */
+  gap: 40px 30px; /* Space between columns and rows */
+  padding: 20px;
+}
+
+/* Align buttons within the columns */
+.box-container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between buttons in each column */
+  margin-top: 20px; /* Space before the first button in each section */
+  margin-bottom: 20px; /* Space after the last button in each section */
+}
+
+/* Styles for product details */
+.products li {
+  background-color: #ffffff; /* Light background for list items */
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.list-item.light {
+  background-color: #f0f0f0; /* Light background for list items in light theme */
+}
+
+.list-item.dark {
+  background-color: #333333; /* Dark background for list items in dark theme */
+}
+
+/* Additional styles for product details */
+.product-details {
+  font-family: 'Arial, sans-serif';
+}
+
+.product-name {
+  font-weight: bold;
+}
+
+.product-description,
+.product-weight,
+.product-wholesale-price,
+.product-legacy,
+.product-categories,
+.product-category-name {
+  font-family: 'Arial, sans-serif';
+}
